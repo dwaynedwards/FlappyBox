@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="Screen" style="flex-grow: 1; margin-top: 16px; margin-right: 16px; margin-bottom: 16px; margin-left: 16px;">
+        <ui:VisualElement name="Container" style="flex-grow: 0; flex-direction: row; height: auto; flex-shrink: 0; align-self: flex-start; align-items: flex-start; justify-content: flex-start;">
+            <ui:Label text="Pipes:" name="ScoreLabel" style="-unity-font-style: bold; font-size: 64px; -unity-text-outline-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255); padding-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 8px; padding-bottom: 0; -unity-text-align: upper-center;" />
+            <ui:Label text="0" name="ScoreText" style="font-size: 64px; color: rgb(255, 255, 255); -unity-font-style: bold; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; -unity-text-align: upper-center;">
+                <Bindings>
+                    <ui:DataBinding property="text" binding-mode="ToTarget" data-source="project://database/Assets/Scriptable%20Objects/GameManagerSO.asset?fileID=11400000&amp;guid=8354696b6362a43dd9eda453b9b28ed2&amp;type=2#GameManagerSO" data-source-path="Score" />
+                </Bindings>
+            </ui:Label>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
